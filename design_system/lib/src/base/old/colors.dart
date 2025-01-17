@@ -1,8 +1,8 @@
 // import 'package:equatable/equatable.dart';
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';import 'package:flutter/material.dart';
 
-// class ApodColorsData extends Equatable {
-//   const ApodColorsData({
+// class UKeepColorsData extends Equatable {
+//   const UKeepColorsData({
 //     required this.accent,
 //     required this.accentHighlight,
 //     required this.accentHighlight2,
@@ -13,7 +13,7 @@
 //     required this.accentOpposite,
 //   });
 
-//   factory ApodColorsData.light() => const ApodColorsData(
+//   factory UKeepColorsData.light() => const UKeepColorsData(
 //         accent: Color(0xFFD21F3C),
 //         accentOpposite: Color(0xFFFFFFFF),
 //         accentHighlight: Color(0xFFB71C37),
@@ -24,7 +24,7 @@
 //         actionBarForeground: Color(0xFFFFFFFF),
 //       );
 
-//   factory ApodColorsData.dark() => const ApodColorsData(
+//   factory UKeepColorsData.dark() => const UKeepColorsData(
 //         accent: Color(0xFFD21F3C),
 //         accentOpposite: Color(0xFFFFFFFF),
 //         accentHighlight: Color(0xFFB71C37),
@@ -35,7 +35,7 @@
 //         actionBarForeground: Color(0xFFFFFFFF),
 //       );
 
-//   factory ApodColorsData.highContrast() => const ApodColorsData(
+//   factory UKeepColorsData.highContrast() => const UKeepColorsData(
 //         accent: Color(0xFFD21F3C),
 //         accentOpposite: Color(0xFFFFFFFF),
 //         accentHighlight: Color(0xFFD21F3C),

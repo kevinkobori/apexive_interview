@@ -4,8 +4,8 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodScaffold extends StatelessWidget {
-  const ApodScaffold({
+class UKeepScaffold extends StatelessWidget {
+  const UKeepScaffold({
     required this.body,
     super.key,
     this.backgroundColor,

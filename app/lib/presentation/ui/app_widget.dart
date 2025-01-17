@@ -29,7 +29,7 @@ class _AppWrapWidgetState extends State<AppWrapWidget> {
       builder: (context, state) {
         Widget loading() => const Center(child: CircularProgressIndicator());
 
-        Widget loaded(ThemeMode themeMode) => ApodAppBuilder(
+        Widget loaded(ThemeMode themeMode) => UKeepAppBuilder(
               routerConfig: Modular.routerConfig,
               themeMode: themeMode,
             );

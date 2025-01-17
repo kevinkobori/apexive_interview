@@ -4,10 +4,10 @@ import 'package:mocktail/mocktail.dart' as mt;
 
 export 'mocks/mocks.dart';
 
-class ApodTest {
-  static ApodTest? _instance;
-  static ApodTest get instance => _instance!;
-  static set instance(ApodTest instance) => _instance = instance;
+class UKeepTest {
+  static UKeepTest? _instance;
+  static UKeepTest get instance => _instance!;
+  static set instance(UKeepTest instance) => _instance = instance;
 
   /// faker
   static fk.Faker get faker => fk.Faker.withGenerator(fk.random);

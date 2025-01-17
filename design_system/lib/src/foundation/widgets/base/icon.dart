@@ -1,55 +1,55 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-enum ApodIconSize {
+enum UKeepIconSize {
   extraSmall,
   medium,
   semiLarge,
 }
 
-extension ApodIconSizeExtension on XIconSizesData {
+extension UKeepIconSizeExtension on XIconSizesData {
   // TODO: NOW - PUT ALL SIZES HERE
-  double resolve(ApodIconSize size) {
+  double resolve(UKeepIconSize size) {
     switch (size) {
-      case ApodIconSize.extraSmall:
+      case UKeepIconSize.extraSmall:
         return extraSmall;
-      case ApodIconSize.medium:
+      case UKeepIconSize.medium:
         return medium;
-      case ApodIconSize.semiLarge:
+      case UKeepIconSize.semiLarge:
         return semiLarge;
     }
   }
 }
 
-class ApodIcon extends StatelessWidget {
-  const ApodIcon(
+class UKeepIcon extends StatelessWidget {
+  const UKeepIcon(
     this.data, {
     super.key,
     this.color,
-    this.size = ApodIconSize.medium,
+    this.size = UKeepIconSize.medium,
   });
 
-  const ApodIcon.small(
+  const UKeepIcon.small(
     this.data, {
     super.key,
     this.color,
-  }) : size = ApodIconSize.extraSmall;
+  }) : size = UKeepIconSize.extraSmall;
 
-  const ApodIcon.regular(
+  const UKeepIcon.regular(
     this.data, {
     super.key,
     this.color,
-  }) : size = ApodIconSize.medium;
+  }) : size = UKeepIconSize.medium;
 
-  const ApodIcon.big(
+  const UKeepIcon.big(
     this.data, {
     super.key,
     this.color,
-  }) : size = ApodIconSize.semiLarge;
+  }) : size = UKeepIconSize.semiLarge;
 
   final String data;
   final Color? color;
-  final ApodIconSize size;
+  final UKeepIconSize size;
 
   @override
   Widget build(BuildContext context) {
@@ -70,18 +70,18 @@ class ApodIcon extends StatelessWidget {
   }
 }
 
-class ApodAnimatedIcon extends StatelessWidget {
-  const ApodAnimatedIcon(
+class UKeepAnimatedIcon extends StatelessWidget {
+  const UKeepAnimatedIcon(
     this.data, {
     super.key,
     this.color,
-    this.size = ApodIconSize.extraSmall,
+    this.size = UKeepIconSize.extraSmall,
     this.duration = const Duration(milliseconds: 200),
   });
 
   final String data;
   final Color? color;
-  final ApodIconSize size;
+  final UKeepIconSize size;
   final Duration duration;
 
   bool get isAnimated => duration.inMilliseconds > 0;
@@ -93,7 +93,7 @@ class ApodAnimatedIcon extends StatelessWidget {
     final color = this.color ?? colorScheme.onSurface;
 
     if (!isAnimated) {
-      return ApodIcon(
+      return UKeepIcon(
         data,
         key: key,
         color: color,

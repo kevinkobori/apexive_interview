@@ -22,7 +22,7 @@ class _PictureDetailPageState extends State<PictureDetailPage> {
   Future<dz.Either<DomainFailure, PictureViewModel>>
       getPictureViewModelFromLocalStorage() async {
     final pictureJsonList =
-        await ApodLocalStorage(localStorageConfigKeyPathFactory())
+        await UKeepLocalStorage(localStorageConfigKeyPathFactory())
             .getItem(localLoadCatalogUseCaseImplFactory().itemKey);
 
     final int pictureMapIndex =

@@ -1,6 +1,6 @@
 name: minicore_nasa_apod
 description: Monorepo for managing packages in minicore_nasa_apod.
-version: 1.0.0
+version: 0.0.16
 
 environment:
   sdk: ^3.5.4

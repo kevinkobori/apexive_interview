@@ -35,9 +35,9 @@ class _MobileLayout extends StatefulWidget {
 class _MobileLayoutState extends State<_MobileLayout> {
   @override
   Widget build(BuildContext context) {
-    return ApodScaffold(
+    return UKeepScaffold(
       backgroundImage: CachedNetworkImageProvider(widget.picture.url),
-      body: ApodContentSheet(
+      body: UKeepContentSheet(
         children: _buildBody(context, widget.picture),
       ),
       floatingBar: _NavigationBar(
@@ -112,7 +112,7 @@ class _NavigationBar extends StatelessWidget {
 
     return NotificationBar(
       notificationsOverviewPresenter: notificationsOverviewPresenter,
-      child: ApodNavigationBar(
+      child: UKeepNavigationBar(
           animation: route?.animation,
           canNavigateBack: true,
           leading: AccountAvatar(
@@ -124,7 +124,7 @@ class _NavigationBar extends StatelessWidget {
           body: AccountNavigationBarBody(
             accountOverviewPresenter: accountOverviewPresenter,
           ),
-          action: ApodElevatedButton(
+          action: UKeepElevatedButton(
             onPressed: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -135,8 +135,9 @@ class _NavigationBar extends StatelessWidget {
                   style: textTheme.titleSmall!,
                 ),
                 metrics.spacings.gaps.semiSmall,
-                ApodIcon.regular(
-                  assets.icons.characters.char(ApodIconCharacterKey.addPicture),
+                UKeepIcon.regular(
+                  assets.icons.characters
+                      .char(UKeepIconCharacterKey.addPicture),
                 ),
               ],
             ),

@@ -2,14 +2,14 @@
 // import 'package:flutter/material.dart';
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-// class ApodTypographyData extends Equatable {
+// class UKeepTypographyData extends Equatable {
 //   final TextStyle title1;
 //   final TextStyle title2;
 //   final TextStyle title3;
 //   final TextStyle paragraph1;
 //   final TextStyle paragraph2;
 
-//   const ApodTypographyData({
+//   const UKeepTypographyData({
 //     required this.paragraph1,
 //     required this.paragraph2,
 //     required this.title1,
@@ -17,7 +17,7 @@
 //     required this.title3,
 //   });
 
-//   factory ApodTypographyData.regular() => const ApodTypographyData(
+//   factory UKeepTypographyData.regular() => const UKeepTypographyData(
 //         paragraph1: TextStyle(
 //           fontFamily: 'Poppins',
 //           package: 'nasa_apod_design_system',
@@ -55,7 +55,7 @@
 //         ),
 //       );
 
-//   factory ApodTypographyData.small() => const ApodTypographyData(
+//   factory UKeepTypographyData.small() => const UKeepTypographyData(
 //         paragraph1: TextStyle(
 //           fontFamily: 'Poppins',
 //           package: 'nasa_apod_design_system',

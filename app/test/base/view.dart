@@ -30,7 +30,7 @@ void testAppView(
               ...deviceCategory.value.entries.map(
                 (device) => MediaQuery(
                   data: device.value,
-                  child: ApodAppBuilder(
+                  child: UKeepAppBuilder(
                     themeMode: themeMode,
                     // appLogo: '<svg width="100" height="50"></svg>',
                     // appWormLogo: '<svg width="100" height="50"></svg>',

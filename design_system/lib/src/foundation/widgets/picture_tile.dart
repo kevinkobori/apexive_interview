@@ -6,7 +6,7 @@ import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:tap_builder/tap_builder.dart';
 
-class ApodPictureTile extends StatefulWidget {
+class UKeepPictureTile extends StatefulWidget {
   final bool _isLoading;
   final String title;
   final String url;
@@ -15,7 +15,7 @@ class ApodPictureTile extends StatefulWidget {
   final double aspectRatio;
   final VoidCallback? onTap;
 
-  const ApodPictureTile({
+  const UKeepPictureTile({
     required this.title,
     required this.url,
     required this.mediaType,
@@ -25,7 +25,7 @@ class ApodPictureTile extends StatefulWidget {
     super.key,
   }) : _isLoading = false;
 
-  const ApodPictureTile._shimmer(this.aspectRatio)
+  const UKeepPictureTile._shimmer(this.aspectRatio)
       : _isLoading = true,
         title = '',
         url = '',
@@ -33,18 +33,18 @@ class ApodPictureTile extends StatefulWidget {
         date = '',
         onTap = null;
 
-  factory ApodPictureTile.shimmer() {
+  factory UKeepPictureTile.shimmer() {
     const double min = 0.5;
     const double max = 2;
     final double aspectRatio = 0.5 + Random().nextDouble() * (max - min);
-    return ApodPictureTile._shimmer(aspectRatio);
+    return UKeepPictureTile._shimmer(aspectRatio);
   }
 
   @override
-  State<ApodPictureTile> createState() => _ApodPictureTileState();
+  State<UKeepPictureTile> createState() => _UKeepPictureTileState();
 }
 
-class _ApodPictureTileState extends State<ApodPictureTile> {
+class _UKeepPictureTileState extends State<UKeepPictureTile> {
   @override
   Widget build(BuildContext context) {
     if (widget._isLoading) {
@@ -158,7 +158,7 @@ class ProductTileLayout extends StatelessWidget {
                       transformAlignment: Alignment.center,
                       child: mediaType == MediaType.image
                           ? Image(
-                              image: ApodCachedNetworkImageProvider(url),
+                              image: UKeepCachedNetworkImageProvider(url),
                               fit: BoxFit.cover,
                             )
                           : const SizedBox.shrink(),

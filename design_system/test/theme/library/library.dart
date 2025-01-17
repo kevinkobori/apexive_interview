@@ -10,8 +10,8 @@ part 'shadows.dart';
 part 'spacing.dart';
 part 'typography.dart';
 
-class ApodThemeLibrary extends StatelessWidget {
-  const ApodThemeLibrary({
+class UKeepThemeLibrary extends StatelessWidget {
+  const UKeepThemeLibrary({
     required this.themeMode,
     required this.formFactor,
     super.key,
@@ -24,7 +24,7 @@ class ApodThemeLibrary extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ApodAppBuilder(
+      home: UKeepAppBuilder(
         // appLogo: '<svg></svg>',
         // appWormLogo: '<svg></svg>',
         themeMode: themeMode,
@@ -32,7 +32,7 @@ class ApodThemeLibrary extends StatelessWidget {
         child: Builder(
           builder: (context) {
             return ThemeContainer(
-              title: 'Apod Theme : ${formFactor.name} - ${themeMode.name}',
+              title: 'UKeep Theme : ${formFactor.name} - ${themeMode.name}',
               sections: [
                 // colors(context),
                 // typography(context),

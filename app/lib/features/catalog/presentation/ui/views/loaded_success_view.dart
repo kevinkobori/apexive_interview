@@ -47,7 +47,7 @@ class _MobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ApodScaffold(
+    return UKeepScaffold(
       backgroundImage: catalog[0].mediaType == MediaType.video
           ? null
           : CachedNetworkImageProvider(catalog[0].url),
@@ -124,7 +124,7 @@ class _BodyState extends State<_Body> {
                 children: [
                   Stack(
                     children: [
-                      ApodPictureTile(
+                      UKeepPictureTile(
                         // key: Key(widget.catalog[0].date),
                         title: widget.catalog[0].title,
                         url: widget.catalog[0].url,
@@ -142,8 +142,8 @@ class _BodyState extends State<_Body> {
                           height: assets.icons.sizes.semiLarge,
                           width: assets.icons.sizes.semiLarge,
                           alignment: Alignment.centerLeft,
-                          child: ApodSvgPicture.asset(
-                            assets.images.path(ApodImageKey.appLogo),
+                          child: UKeepSvgPicture.asset(
+                            assets.images.path(UKeepImageKey.appLogo),
                           ),
                         ),
                       ),
@@ -156,13 +156,13 @@ class _BodyState extends State<_Body> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         if (widget.catalog.length == 1) ...[
-                          ApodElevatedButton(
+                          UKeepElevatedButton(
                             onPressed: widget.onLoadCatalog,
                             child: const Text('List all'),
                           ),
                           metrics.spacings.gaps.semiSmall,
                         ],
-                        ApodDatePickerDialog(
+                        UKeepDatePickerDialog(
                             onLoadPictureByDate: widget.onLoadPictureByDate),
                       ],
                     ),
@@ -186,7 +186,7 @@ class _BodyState extends State<_Body> {
           ),
           SliverSafeArea(
             top: false,
-            sliver: ApodSliverGridTile(
+            sliver: UKeepSliverGridTile(
               padding: EdgeInsets.only(
                 left: metrics.spacings.large,
                 top: metrics.spacings.extraSmall,
@@ -201,7 +201,7 @@ class _BodyState extends State<_Body> {
               children: widget.catalog
                   .skip(1)
                   .map(
-                    (picture) => ApodPictureTile(
+                    (picture) => UKeepPictureTile(
                       // key: Key(picture.date),
                       title: picture.title,
                       url: picture.url,
@@ -235,7 +235,7 @@ class _NavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return NotificationBar(
       notificationsOverviewPresenter: notificationsOverviewPresenter,
-      child: ApodNavigationBar(
+      child: UKeepNavigationBar(
         leading: AccountAvatar(
           accountOverviewPresenter: accountOverviewPresenter,
         ),

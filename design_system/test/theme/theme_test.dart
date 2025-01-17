@@ -41,7 +41,7 @@ void _renderLibrary(XFormFactor formFactor) async {
         children: [
           ...ThemeMode.values.map(
             (colorMode) => Expanded(
-              child: ApodThemeLibrary(
+              child: UKeepThemeLibrary(
                 themeMode: colorMode,
                 formFactor: formFactor,
               ),

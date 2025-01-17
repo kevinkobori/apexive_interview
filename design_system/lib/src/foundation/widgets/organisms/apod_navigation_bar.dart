@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodNavigationBar extends StatelessWidget {
+class UKeepNavigationBar extends StatelessWidget {
   final Animation<double>? animation;
   final bool canNavigateBack;
   final Widget leading;
@@ -9,7 +9,7 @@ class ApodNavigationBar extends StatelessWidget {
   final Widget summary;
   final Widget? action;
 
-  const ApodNavigationBar({
+  const UKeepNavigationBar({
     required this.leading,
     required this.body,
     required this.summary,
@@ -40,7 +40,7 @@ class ApodNavigationBar extends StatelessWidget {
               ),
               FadeTransition(
                 opacity: animation,
-                child: const ApodBackButton(),
+                child: const UKeepBackButton(),
               ),
             ],
           ),
@@ -112,7 +112,7 @@ class ApodNavigationBar extends StatelessWidget {
               opacity: !canNavigateBack ? 0.0 : 1.0,
               child: IgnorePointer(
                 ignoring: !canNavigateBack,
-                child: const ApodBackButton(),
+                child: const UKeepBackButton(),
               ),
             ),
           ],
@@ -153,7 +153,7 @@ class _NavigationBarContainer extends StatelessWidget {
     final metrics = Theme.of(context).extension<XMetricsData>()!;
     final colorScheme = Theme.of(context).colorScheme;
 
-    return ApodContainer(
+    return UKeepContainer(
       padding: metrics.spacings.edgeInsets.allSemiSmall,
       decoration: BoxDecoration(
         borderRadius: metrics.radius.border.semiSmall,

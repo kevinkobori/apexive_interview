@@ -2,19 +2,19 @@
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
 // class XAssetsData extends ThemeExtension<XAssetsData> {
-//   final ApodIconsData icons;
-//   final ApodImagesData images;
+//   final UKeepIconsData icons;
+//   final UKeepImagesData images;
 
 //   XAssetsData({
-//     final ApodIconsData? icons,
-//     final ApodImagesData? images,
-//   })  : icons = ApodIconsData(),
-//         images = const ApodImagesData();
+//     final UKeepIconsData? icons,
+//     final UKeepImagesData? images,
+//   })  : icons = UKeepIconsData(),
+//         images = const UKeepImagesData();
 
 //   @override
 //   XAssetsData copyWith({
-//     ApodIconsData? icons,
-//     ApodImagesData? images,
+//     UKeepIconsData? icons,
+//     UKeepImagesData? images,
 //   }) {
 //     return XAssetsData(
 //       icons: icons ?? this.icons,

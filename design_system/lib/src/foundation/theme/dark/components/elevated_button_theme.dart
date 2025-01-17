@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-abstract class ApodDarkElevatedButtonTheme {
+abstract class UKeepDarkElevatedButtonTheme {
   static ElevatedButtonThemeData get data => ElevatedButtonThemeData(
         style: ButtonStyle(
           // Background color
           backgroundColor: WidgetStateProperty.resolveWith<Color?>(
             (states) {
               if (states.contains(WidgetState.disabled)) {
-                return ApodDarkColorScheme.data.primary;
+                return UKeepDarkColorScheme.data.primary;
               } else if (states.contains(WidgetState.hovered)) {
-                return ApodDarkColorScheme.data.secondary;
+                return UKeepDarkColorScheme.data.secondary;
               } else if (states.contains(WidgetState.pressed)) {
-                return ApodDarkColorScheme.data.tertiary;
+                return UKeepDarkColorScheme.data.tertiary;
                 // TODO:
                 // } else if (states.contains(MaterialState.focused)) {
                 //   return null;
@@ -25,14 +25,14 @@ abstract class ApodDarkElevatedButtonTheme {
                 // } else if (states.contains(MaterialState.selected)) {
                 //   return null;
               }
-              return ApodDarkColorScheme.data.primary;
+              return UKeepDarkColorScheme.data.primary;
             },
           ),
           // TODO:
           // Foreground (text/icon) color
           foregroundColor: WidgetStateProperty.resolveWith<Color?>(
             (states) {
-              return ApodDarkColorScheme.data.onPrimary; // Default color
+              return UKeepDarkColorScheme.data.onPrimary; // Default color
             },
           ),
           // // Overlay color (the color that appears over the button when pressed, hovered, etc.)

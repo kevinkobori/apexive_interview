@@ -17,8 +17,8 @@ class RemoteLoadCatalogByStartEndDateUseCaseImpl
   @override
   Future<Either<DomainFailure, List<PictureEntity>>> call(
       LoadCatalogParams params) async {
-    final apodStartDate = getApodDateFormat(params.startDate);
-    final apodEndDate = getApodDateFormat(params.endDate);
+    final apodStartDate = getUKeepDateFormat(params.startDate);
+    final apodEndDate = getUKeepDateFormat(params.endDate);
 
     final repositoryResult = await pictureRepository.getCatalogByStartEndDate(
       apodApiUrlFactory(
@@ -30,7 +30,7 @@ class RemoteLoadCatalogByStartEndDateUseCaseImpl
     return repositoryResult;
   }
 
-  static String getApodDateFormat(DateTime localDateTime) {
+  static String getUKeepDateFormat(DateTime localDateTime) {
     tz1.initializeTimeZones();
     final tz2.Location apodLocation = tz2.getLocation('America/New_York');
     final tz2.TZDateTime apodDateTime =

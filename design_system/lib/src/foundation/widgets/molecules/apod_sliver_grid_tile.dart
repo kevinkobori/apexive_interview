@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodSliverGridTile extends StatelessWidget {
+class UKeepSliverGridTile extends StatelessWidget {
   final int crossAxisCount;
   final List<Widget> children;
   final EdgeInsets? padding;
 
-  const ApodSliverGridTile({
+  const UKeepSliverGridTile({
     required this.children,
     super.key,
     this.crossAxisCount = 2,

@@ -22,7 +22,7 @@ class NotificationBar extends StatelessWidget {
       bloc: notificationsOverviewPresenter,
       builder: (context, state) {
         if (state is NotificationsOverviewStateLoadedData) {
-          return ApodNotifiableBar(
+          return UKeepNotifiableBar(
             onClosed: () => BlocProvider.of<NotificationsOverviewBloc>(context)
                 .add(CloseEvent(null)),
             notification: state.lastNotification != null
@@ -32,7 +32,7 @@ class NotificationBar extends StatelessWidget {
                     icon: () {
                       return switch (state.lastNotification!.type) {
                         NotificationType.offer =>
-                          assets.images.path(ApodImageKey.appLogo),
+                          assets.images.path(UKeepImageKey.appLogo),
                       };
                     }(),
                   )

@@ -14,8 +14,8 @@ class CatalogPageLoadedFailureView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ApodScaffold(
-      body: ApodFailureReloadView(
+    return UKeepScaffold(
+      body: UKeepFailureReloadView(
         failureMessage: failureMessage,
         onReload: onReload,
       ),

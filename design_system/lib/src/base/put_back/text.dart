@@ -1,7 +1,7 @@
 // import 'package:flutter/widgets.dart';
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-// enum ApodTextLevel {
+// enum UKeepTextLevel {
 //   bodyMedium(XTextLevel.bodyMedium),
 //   bodyLarge(XTextLevel.bodyLarge),
 //   titleSmall(XTextLevel.titleSmall),
@@ -10,13 +10,13 @@
 
 //   final XTextLevel xLevel;
 
-//   const ApodTextLevel(this.xLevel);
+//   const UKeepTextLevel(this.xLevel);
 // }
 
-// class ApodText extends XText {
-//   ApodText.(
+// class UKeepText extends XText {
+//   UKeepText.(
 //     String data, {
-//     required ApodTextLevel level,
+//     required UKeepTextLevel level,
 //     super.key,
 //     StrutStyle? strutStyle,
 //     TextAlign? textAlign,
@@ -80,7 +80,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.labelSmall(
+//   const UKeepText.labelSmall(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -111,7 +111,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.labelMedium(
+//   const UKeepText.labelMedium(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -142,7 +142,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.labelLarge(
+//   const UKeepText.labelLarge(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -173,7 +173,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.bodySmall(
+//   const UKeepText.bodySmall(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -204,7 +204,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.bodyMedium(
+//   const UKeepText.bodyMedium(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -235,7 +235,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.bodyLarge(
+//   const UKeepText.bodyLarge(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -266,7 +266,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.titleSmall(
+//   const UKeepText.titleSmall(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -297,7 +297,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.titleMedium(
+//   const UKeepText.titleMedium(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -328,7 +328,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.titleLarge(
+//   const UKeepText.titleLarge(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -359,7 +359,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.headlineSmall(
+//   const UKeepText.headlineSmall(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -390,7 +390,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.headlineMedium(
+//   const UKeepText.headlineMedium(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -421,7 +421,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.headlineLarge(
+//   const UKeepText.headlineLarge(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -452,7 +452,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.displaySmall(
+//   const UKeepText.displaySmall(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -483,7 +483,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.displayMedium(
+//   const UKeepText.displayMedium(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,
@@ -514,7 +514,7 @@
 //           textScaler: textScaler,
 //         );
 
-//   const ApodText.displayLarge(
+//   const UKeepText.displayLarge(
 //     String data, {
 //     super.key,
 //     StrutStyle? strutStyle,

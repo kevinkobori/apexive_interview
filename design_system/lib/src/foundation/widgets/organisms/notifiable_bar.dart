@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nasa_apod_core/nasa_apod_core.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodNotifiableBar extends StatefulWidget {
-  const ApodNotifiableBar({
+class UKeepNotifiableBar extends StatefulWidget {
+  const UKeepNotifiableBar({
     required this.child,
     super.key,
     this.notification,
@@ -15,14 +15,14 @@ class ApodNotifiableBar extends StatefulWidget {
   final Widget child;
 
   @override
-  State<ApodNotifiableBar> createState() => _ApodNotifiableBarState();
+  State<UKeepNotifiableBar> createState() => _UKeepNotifiableBarState();
 }
 
-class _ApodNotifiableBarState extends State<ApodNotifiableBar> {
+class _UKeepNotifiableBarState extends State<UKeepNotifiableBar> {
   late bool _isOpened = widget.notification != null;
 
   @override
-  void didUpdateWidget(covariant ApodNotifiableBar oldWidget) {
+  void didUpdateWidget(covariant UKeepNotifiableBar oldWidget) {
     super.didUpdateWidget(oldWidget);
 
     if (oldWidget.notification != widget.notification) {
@@ -35,7 +35,7 @@ class _ApodNotifiableBarState extends State<ApodNotifiableBar> {
   @override
   Widget build(BuildContext context) {
     return _isOpened
-        ? ApodNotifiableBarLayout.opened(
+        ? UKeepNotifiableBarLayout.opened(
             notification: widget.notification,
             onClosed: () {
               setState(() {
@@ -45,33 +45,33 @@ class _ApodNotifiableBarState extends State<ApodNotifiableBar> {
             },
             child: widget.child,
           )
-        : ApodNotifiableBarLayout.closed(
+        : UKeepNotifiableBarLayout.closed(
             child: widget.child,
           );
   }
 }
 
-enum ApodNotifiableBarState {
+enum UKeepNotifiableBarState {
   opened,
   closed,
 }
 
-class ApodNotifiableBarLayout extends StatelessWidget {
-  const ApodNotifiableBarLayout.opened({
+class UKeepNotifiableBarLayout extends StatelessWidget {
+  const UKeepNotifiableBarLayout.opened({
     required this.notification,
     required this.child,
     super.key,
     this.onClosed,
-  }) : _state = ApodNotifiableBarState.opened;
+  }) : _state = UKeepNotifiableBarState.opened;
 
-  const ApodNotifiableBarLayout.closed({
+  const UKeepNotifiableBarLayout.closed({
     required this.child,
     super.key,
     this.onClosed,
-  })  : _state = ApodNotifiableBarState.closed,
+  })  : _state = UKeepNotifiableBarState.closed,
         notification = null;
 
-  final ApodNotifiableBarState _state;
+  final UKeepNotifiableBarState _state;
   final NotificationViewModel? notification;
   final VoidCallback? onClosed;
   final Widget child;
@@ -82,7 +82,7 @@ class ApodNotifiableBarLayout extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final notification = this.notification;
     final isOpened =
-        notification != null || _state == ApodNotifiableBarState.opened;
+        notification != null || _state == UKeepNotifiableBarState.opened;
 
     return AnimatedContainer(
       duration: metrics.durations.regular,
@@ -138,11 +138,11 @@ class _NotificationBody extends StatelessWidget {
         Expanded(
           child: Row(
             children: [
-              ApodContainer(
+              UKeepContainer(
                 height: assets.icons.sizes.semiLarge,
                 width: assets.icons.sizes.semiLarge,
                 margin: metrics.spacings.edgeInsets.allSemiSmall,
-                child: ApodSvgPicture.asset(
+                child: UKeepSvgPicture.asset(
                   'assets/images/nasa_logo.svg',
                 ),
               ),
@@ -172,7 +172,7 @@ class _NotificationBody extends StatelessWidget {
           ),
         ),
         metrics.spacings.edgeInsets.paddings.allSmall(
-          child: ApodDismissButton(onClose: onClose),
+          child: UKeepDismissButton(onClose: onClose),
         ),
       ],
     );

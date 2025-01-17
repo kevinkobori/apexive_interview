@@ -1,36 +1,36 @@
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-// class ApodGap extends XGap {
-//   const ApodGap(
+// class UKeepGap extends XGap {
+//   const UKeepGap(
 //     super.xSpacing, {
 //     super.key,
 //   });
 
-//   const ApodGap.none({
+//   const UKeepGap.none({
 //     super.key,
 //   }) : super.none();
 
-//   const ApodGap.extraSmall({
+//   const UKeepGap.extraSmall({
 //     super.key,
 //   }) : super.extraSmall();
 
-//   const ApodGap.small({
+//   const UKeepGap.small({
 //     super.key,
 //   }) : super.small();
 
-//   const ApodGap.semiSmall({
+//   const UKeepGap.semiSmall({
 //     super.key,
 //   }) : super.semiSmall();
 
-//   const ApodGap.large({
+//   const UKeepGap.large({
 //     super.key,
 //   }) : super.large();
 
-//   const ApodGap.extraLarge({
+//   const UKeepGap.extraLarge({
 //     super.key,
 //   }) : super.extraLarge();
 
-//   const ApodGap.superLarge({
+//   const UKeepGap.superLarge({
 //     super.key,
 //   }) : super.superLarge();
 // }

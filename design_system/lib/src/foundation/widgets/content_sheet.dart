@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 
-class ApodContentSheet extends StatelessWidget {
-  const ApodContentSheet({
+class UKeepContentSheet extends StatelessWidget {
+  const UKeepContentSheet({
     required this.children,
     super.key,
   });

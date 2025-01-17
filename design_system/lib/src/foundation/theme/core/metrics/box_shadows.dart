@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodBoxShadows {
+class UKeepBoxShadows {
   static XBoxShadowsData get data => XBoxShadowsData(
         small: const Optional.of(
           BoxShadow(

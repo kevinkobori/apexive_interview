@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:nasa_apod_core/nasa_apod_core.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodFailureReloadView extends StatelessWidget {
+class UKeepFailureReloadView extends StatelessWidget {
   final String failureMessage;
   final void Function() onReload;
 
-  const ApodFailureReloadView({
+  const UKeepFailureReloadView({
     required this.failureMessage,
     required this.onReload,
     super.key,
@@ -26,7 +26,7 @@ class ApodFailureReloadView extends StatelessWidget {
             style: textTheme.titleMedium!,
           ),
           metrics.spacings.gaps.small,
-          ApodElevatedButton(
+          UKeepElevatedButton(
             onPressed: onReload,
             child: Text(I18n.strings.reload),
           )

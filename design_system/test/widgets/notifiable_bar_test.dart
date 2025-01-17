@@ -24,7 +24,7 @@ void main() {
     return NotificationViewModel(
       title: 'Save 50% on shields this week',
       description: 'See the offer',
-      icon: assets.images.path(ApodImageKey.appLogo),
+      icon: assets.images.path(UKeepImageKey.appLogo),
     );
   }
 
@@ -33,7 +33,7 @@ void main() {
     {
       'opened': Builder(
         builder: (context) {
-          return ApodNotifiableBarLayout.opened(
+          return UKeepNotifiableBarLayout.opened(
             notification: notification(context),
             child: bar(context),
           );
@@ -41,7 +41,7 @@ void main() {
       ),
       'closed': Builder(
         builder: (context) {
-          return ApodNotifiableBarLayout.closed(
+          return UKeepNotifiableBarLayout.closed(
             child: bar(context),
           );
         },

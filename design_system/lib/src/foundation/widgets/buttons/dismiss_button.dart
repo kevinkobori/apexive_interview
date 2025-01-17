@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodDismissButton extends StatelessWidget {
+class UKeepDismissButton extends StatelessWidget {
   final VoidCallback? onClose;
 
-  const ApodDismissButton({
+  const UKeepDismissButton({
     super.key,
     this.onClose,
   });
@@ -13,9 +13,9 @@ class ApodDismissButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final assets = Theme.of(context).extension<XAssetsData>()!;
 
-    return ApodIconButton(
-      icon: ApodIcon.regular(
-        assets.icons.characters.char(ApodIconCharacterKey.dismiss),
+    return UKeepIconButton(
+      icon: UKeepIcon.regular(
+        assets.icons.characters.char(UKeepIconCharacterKey.dismiss),
       ),
       onPressed: onClose,
     );

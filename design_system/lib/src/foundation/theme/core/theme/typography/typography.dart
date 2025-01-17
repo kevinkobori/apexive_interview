@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodTextTheme {
+class UKeepTextTheme {
   static TextTheme data(XFormFactor? formFactor) {
     if (formFactor == XFormFactor.small) {
       return _smallData;

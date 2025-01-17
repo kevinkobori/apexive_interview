@@ -1,6 +1,6 @@
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodDurations {
+class UKeepDurations {
   static XDurationsData get data => XDurationsData(
         areAnimationEnabled: const Optional.of(true),
         regular: const Optional.of(

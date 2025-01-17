@@ -2,51 +2,51 @@
 // import 'package:flutter/material.dart';
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-// class ApodThemeData extends ThemeExtension<ApodThemeData> {
-//   final ApodIconsData icons;
-//   // final ApodTypographyData typography;
-//   final ApodRadiusData radius;
-//   final ApodSpacingsData spacings;
-//   final ApodBoxShadowsData boxShadows;
-//   final ApodDurationsData durations;
-//   final ApodImagesData images;
-//   final ApodAppFormFactor formFactor;
+// class UKeepThemeData extends ThemeExtension<UKeepThemeData> {
+//   final UKeepIconsData icons;
+//   // final UKeepTypographyData typography;
+//   final UKeepRadiusData radius;
+//   final UKeepSpacingsData spacings;
+//   final UKeepBoxShadowsData boxShadows;
+//   final UKeepDurationsData durations;
+//   final UKeepImagesData images;
+//   final UKeepAppFormFactor formFactor;
 //   final TargetPlatform? _platform;
 //   TargetPlatform get platform => _platform ?? defaultTargetPlatform;
 
-//   ApodThemeData({
-//     final ApodIconsData? icons,
-//     // final ApodTypographyData? typography,
-//     final ApodRadiusData? radius,
-//     final ApodSpacingsData? spacings,
-//     final ApodBoxShadowsData? boxShadows,
-//     final ApodDurationsData? durations,
-//     final ApodImagesData? images,
-//     final ApodAppFormFactor? formFactor,
+//   UKeepThemeData({
+//     final UKeepIconsData? icons,
+//     // final UKeepTypographyData? typography,
+//     final UKeepRadiusData? radius,
+//     final UKeepSpacingsData? spacings,
+//     final UKeepBoxShadowsData? boxShadows,
+//     final UKeepDurationsData? durations,
+//     final UKeepImagesData? images,
+//     final UKeepAppFormFactor? formFactor,
 //     final TargetPlatform? platform,
 //   })  : _platform = platform,
-//         formFactor = ApodAppFormFactor.medium,
-//         icons = ApodIconsData(),
-//         // typography = ApodTypographyData.regular(),
-//         radius = const ApodRadiusData(),
-//         spacings = const ApodSpacingsData(),
-//         boxShadows = const ApodBoxShadowsData(),
-//         durations = const ApodDurationsData(),
-//         images = const ApodImagesData();
+//         formFactor = UKeepAppFormFactor.medium,
+//         icons = UKeepIconsData(),
+//         // typography = UKeepTypographyData.regular(),
+//         radius = const UKeepRadiusData(),
+//         spacings = const UKeepSpacingsData(),
+//         boxShadows = const UKeepBoxShadowsData(),
+//         durations = const UKeepDurationsData(),
+//         images = const UKeepImagesData();
 
 //   @override
-//   ApodThemeData copyWith({
-//     ApodIconsData? icons,
-//     // ApodTypographyData? typography,
-//     ApodRadiusData? radius,
-//     ApodSpacingsData? spacings,
-//     ApodBoxShadowsData? boxShadows,
-//     ApodDurationsData? durations,
-//     ApodImagesData? images,
-//     ApodAppFormFactor? formFactor,
+//   UKeepThemeData copyWith({
+//     UKeepIconsData? icons,
+//     // UKeepTypographyData? typography,
+//     UKeepRadiusData? radius,
+//     UKeepSpacingsData? spacings,
+//     UKeepBoxShadowsData? boxShadows,
+//     UKeepDurationsData? durations,
+//     UKeepImagesData? images,
+//     UKeepAppFormFactor? formFactor,
 //     TargetPlatform? platform,
 //   }) {
-//     return ApodThemeData(
+//     return UKeepThemeData(
 //       icons: icons ?? this.icons,
 //       // typography: typography ?? this.typography,
 //       radius: radius ?? this.radius,
@@ -60,12 +60,12 @@
 //   }
 
 //   @override
-//   ApodThemeData lerp(ThemeExtension<ApodThemeData>? other, double t) {
-//     if (other is! ApodThemeData) {
+//   UKeepThemeData lerp(ThemeExtension<UKeepThemeData>? other, double t) {
+//     if (other is! UKeepThemeData) {
 //       return this;
 //     }
 
-//     return ApodThemeData(
+//     return UKeepThemeData(
 //       formFactor: t < 0.5 ? formFactor : other.formFactor,
 //       platform: platform,
 //     );
@@ -74,7 +74,7 @@
 //   @override
 //   bool operator ==(Object other) =>
 //       identical(this, other) ||
-//       other is ApodThemeData &&
+//       other is UKeepThemeData &&
 //           runtimeType == other.runtimeType &&
 //           platform == other.platform &&
 //           icons == other.icons &&
@@ -98,14 +98,14 @@
 //       formFactor.hashCode ^
 //       images.hashCode;
 
-//   ApodThemeData withFormFactor(ApodAppFormFactor formFactor) {
-//     return ApodThemeData(
+//   UKeepThemeData withFormFactor(UKeepAppFormFactor formFactor) {
+//     return UKeepThemeData(
 //       formFactor: formFactor,
 //     );
 //   }
 
-//   ApodThemeData withTypography(ApodTypographyData typography) {
-//     return ApodThemeData(
+//   UKeepThemeData withTypography(UKeepTypographyData typography) {
+//     return UKeepThemeData(
 //       platform: platform,
 //       formFactor: formFactor,
 //       durations: durations,

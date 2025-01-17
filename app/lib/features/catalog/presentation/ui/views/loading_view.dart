@@ -15,7 +15,7 @@ class CatalogPageLoadingView extends StatelessWidget {
     final metrics = Theme.of(context).extension<XMetricsData>()!;
 
     return LayoutBuilder(builder: (context, constraints) {
-      return ApodScaffold(
+      return UKeepScaffold(
         body: CustomScrollView(
           slivers: [
             const SliverToBoxAdapter(
@@ -27,14 +27,14 @@ class CatalogPageLoadingView extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    ApodPictureTile.shimmer(),
+                    UKeepPictureTile.shimmer(),
                   ],
                 ),
               ),
             ),
             SliverSafeArea(
               top: false,
-              sliver: ApodSliverGridTile(
+              sliver: UKeepSliverGridTile(
                 padding: EdgeInsets.only(
                   left: metrics.spacings.large,
                   top: metrics.spacings.extraSmall,
@@ -46,7 +46,7 @@ class CatalogPageLoadingView extends StatelessWidget {
                       metrics.spacings.superLarge,
                 ),
                 crossAxisCount: (constraints.maxWidth / 300).ceil(),
-                children: List.generate(10, (_) => ApodPictureTile.shimmer())
+                children: List.generate(10, (_) => UKeepPictureTile.shimmer())
                     .toList(),
               ),
             ),

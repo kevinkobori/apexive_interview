@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodDatePickerDialog extends StatefulWidget
+class UKeepDatePickerDialog extends StatefulWidget
     implements PreferredSizeWidget {
-  const ApodDatePickerDialog({
+  const UKeepDatePickerDialog({
     required this.onLoadPictureByDate,
     super.key,
   }) : preferredSize = const Size.fromHeight(52);
@@ -14,10 +14,10 @@ class ApodDatePickerDialog extends StatefulWidget
   final Size preferredSize;
 
   @override
-  State<ApodDatePickerDialog> createState() => _ApodDatePickerDialogState();
+  State<UKeepDatePickerDialog> createState() => _UKeepDatePickerDialogState();
 }
 
-class _ApodDatePickerDialogState extends State<ApodDatePickerDialog>
+class _UKeepDatePickerDialogState extends State<UKeepDatePickerDialog>
     with RestorationMixin {
   @override
   String? get restorationId => 'main';
@@ -82,7 +82,7 @@ class _ApodDatePickerDialogState extends State<ApodDatePickerDialog>
 
   @override
   Widget build(BuildContext context) {
-    return ApodElevatedButton(
+    return UKeepElevatedButton(
       onPressed: () => _restorableDatePickerRouteFuture.present(),
       child: const Text('Search by date'),
     );

@@ -3,8 +3,8 @@
 // import 'package:tap_builder/tap_builder.dart';
 
 // // `TODO`: NOW - MIGRATE THIS WIDGET TO USE MATERIAL WIDGETS
-// class ApodElevatedButton extends StatelessWidget {
-//   const ApodElevatedButton({
+// class UKeepElevatedButton extends StatelessWidget {
+//   const UKeepElevatedButton({
 //     super.key,
 //     this.icon,
 //     this.title,
@@ -40,7 +40,7 @@
 //             return Semantics(
 //               enabled: true,
 //               selected: true,
-//               child: ApodTextButtonLayout.hovered(
+//               child: UKeepTextButtonLayout.hovered(
 //                 icon: icon,
 //                 title: title,
 //                 mainAxisSize: mainAxisSize,
@@ -50,7 +50,7 @@
 //             return Semantics(
 //               enabled: true,
 //               selected: true,
-//               child: ApodTextButtonLayout.pressed(
+//               child: UKeepTextButtonLayout.pressed(
 //                 icon: icon,
 //                 title: title,
 //                 mainAxisSize: mainAxisSize,
@@ -60,7 +60,7 @@
 //             return Semantics(
 //               enabled: true,
 //               selected: true,
-//               child: ApodTextButtonLayout.inactive(
+//               child: UKeepTextButtonLayout.inactive(
 //                 icon: icon,
 //                 title: title,
 //                 mainAxisSize: mainAxisSize,
@@ -72,14 +72,14 @@
 //   }
 // }
 
-// enum ApodTextButtonState {
+// enum UKeepTextButtonState {
 //   inactive,
 //   hovered,
 //   pressed,
 // }
 
-// class ApodTextButtonLayout extends StatelessWidget {
-//   const ApodTextButtonLayout.inactive({
+// class UKeepTextButtonLayout extends StatelessWidget {
+//   const UKeepTextButtonLayout.inactive({
 //     super.key,
 //     this.icon,
 //     this.title,
@@ -88,10 +88,10 @@
 //     this.hoveredBackgroundColor,
 //     this.pressedBackgroundColor,
 //     this.foregroundColor,
-//   })  : _state = ApodTextButtonState.inactive,
+//   })  : _state = UKeepTextButtonState.inactive,
 //         assert(icon != null || title != null);
 
-//   const ApodTextButtonLayout.hovered({
+//   const UKeepTextButtonLayout.hovered({
 //     super.key,
 //     this.icon,
 //     this.title,
@@ -100,10 +100,10 @@
 //     this.hoveredBackgroundColor,
 //     this.pressedBackgroundColor,
 //     this.foregroundColor,
-//   })  : _state = ApodTextButtonState.hovered,
+//   })  : _state = UKeepTextButtonState.hovered,
 //         assert(icon != null || title != null);
 
-//   const ApodTextButtonLayout.pressed({
+//   const UKeepTextButtonLayout.pressed({
 //     super.key,
 //     this.icon,
 //     this.title,
@@ -112,13 +112,13 @@
 //     this.hoveredBackgroundColor,
 //     this.pressedBackgroundColor,
 //     this.foregroundColor,
-//   })  : _state = ApodTextButtonState.pressed,
+//   })  : _state = UKeepTextButtonState.pressed,
 //         assert(icon != null || title != null);
 
 //   final String? icon;
 //   final String? title;
 //   final MainAxisSize mainAxisSize;
-//   final ApodTextButtonState _state;
+//   final UKeepTextButtonState _state;
 //   final Color? inactiveBackgroundColor;
 //   final Color? hoveredBackgroundColor;
 //   final Color? pressedBackgroundColor;
@@ -126,7 +126,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
-//     final metrics = Theme.of(context).extension<ApodThemeData>()!;
+//     final metrics = Theme.of(context).extension<UKeepThemeData>()!;
 //     final colorScheme = Theme.of(context).colorScheme;
 //     final textTheme = Theme.of(context).textTheme;
 
@@ -136,11 +136,11 @@
 //     final foregroundColor = this.foregroundColor ?? colorScheme.onSurface;
 //     final backgroundColor = () {
 //       switch (_state) {
-//         case ApodTextButtonState.inactive:
+//         case UKeepTextButtonState.inactive:
 //           return inactiveBackgroundColor ?? colorScheme.primary;
-//         case ApodTextButtonState.hovered:
+//         case UKeepTextButtonState.hovered:
 //           return hoveredBackgroundColor ?? colorScheme.secondary;
-//         case ApodTextButtonState.pressed:
+//         case UKeepTextButtonState.pressed:
 //           return pressedBackgroundColor ?? colorScheme.tertiary;
 //       }
 //     }();
@@ -166,7 +166,7 @@
 //               ),
 //             ),
 //           if (hasBoth) metrics.xSpacings.xGaps.semiSmall,
-//           if (icon != null) ApodIcon.regular(icon, color: foregroundColor),
+//           if (icon != null) UKeepIcon.regular(icon, color: foregroundColor),
 //         ],
 //       ),
 //     );

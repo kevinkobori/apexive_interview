@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodAppBuilder extends StatelessWidget {
-  const ApodAppBuilder({
+class UKeepAppBuilder extends StatelessWidget {
+  const UKeepAppBuilder({
     super.key,
     this.formFactor,
     this.routerConfig,
@@ -27,15 +27,15 @@ class ApodAppBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final formFactor = this.formFactor ?? ApodAppBuilder.formFactorOf(context);
+    final formFactor = this.formFactor ?? UKeepAppBuilder.formFactorOf(context);
 
     return child ??
         MaterialApp.router(
-          title: 'Nasa Apod',
+          title: 'Nasa UKeep',
           routerConfig: routerConfig,
           debugShowCheckedModeBanner: false,
-          theme: ApodLightTheme.data(formFactor),
-          darkTheme: ApodDarkTheme.data(formFactor),
+          theme: UKeepLightTheme.data(formFactor),
+          darkTheme: UKeepDarkTheme.data(formFactor),
           themeMode: themeMode,
         );
   }

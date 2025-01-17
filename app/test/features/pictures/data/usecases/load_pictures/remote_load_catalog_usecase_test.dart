@@ -33,18 +33,18 @@ void main() {
       networkInfo: networkInfo,
       pictureDatasource: pictureDatasource,
     );
-    apiKey = ApodTest.faker.randomGenerator.string(10);
+    apiKey = UKeepTest.faker.randomGenerator.string(10);
 
-    final nasaApodEndDate =
-        RemoteLoadCatalogByStartEndDateUseCaseImpl.getApodDateFormat(
+    final nasaUKeepEndDate =
+        RemoteLoadCatalogByStartEndDateUseCaseImpl.getUKeepDateFormat(
             params.endDate);
-    final nasaApodStartDate =
-        RemoteLoadCatalogByStartEndDateUseCaseImpl.getApodDateFormat(
+    final nasaUKeepStartDate =
+        RemoteLoadCatalogByStartEndDateUseCaseImpl.getUKeepDateFormat(
             params.startDate);
 
     url = apodApiUrlFactory(
       apiKey: apiKey,
-      requestPath: '&start_date=$nasaApodStartDate&end_date=$nasaApodEndDate',
+      requestPath: '&start_date=$nasaUKeepStartDate&end_date=$nasaUKeepEndDate',
     );
 
     sut = RemoteLoadCatalogByStartEndDateUseCaseImpl(
@@ -60,12 +60,13 @@ void main() {
 
     await sut.call(params);
 
-    ApodTest.verify(() => httpClient.request(method: HttpMethod.get, url: url));
+    UKeepTest.verify(
+        () => httpClient.request(method: HttpMethod.get, url: url));
   });
 
   test('Should return catalog on 200 with valid data', () async {
     final data =
-        json.encode(ApodResponsesFactory().generateValidPictureJsonList());
+        json.encode(UKeepResponsesFactory().generateValidPictureJsonList());
 
     httpClient.mockRequestSuccess(data);
 
@@ -110,7 +111,7 @@ void main() {
       'Should throw UnexpectedFailure if HttpClient returns 200 with invalid data',
       () async {
     httpClient.mockRequestSuccess(
-        json.encode(ApodResponsesFactory().generateInvalidPictureJsonList()));
+        json.encode(UKeepResponsesFactory().generateInvalidPictureJsonList()));
 
     final result = await sut.call(params);
 
@@ -129,7 +130,7 @@ void main() {
   test('Should throw UnexpectedFailure if HttpClient not returns 200',
       () async {
     httpClient
-        .mockRequestFailure(ApodResponsesFactory().generateNotFoundFailure());
+        .mockRequestFailure(UKeepResponsesFactory().generateNotFoundFailure());
 
     final result = await sut.call(params);
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract final class ApodLightColorScheme {
+abstract final class UKeepLightColorScheme {
   static ColorScheme get data => ColorScheme.fromSeed(
         seedColor: const Color(0xFF1E88E5),
         // brightness: Overall light/dark theme setting.

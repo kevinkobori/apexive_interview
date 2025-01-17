@@ -1,8 +1,8 @@
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodDarkAssets {
+class UKeepDarkAssets {
   static XAssetsData get data => XAssetsData(
-        icons: ApodIcons.data,
-        images: ApodDarkImages.data,
+        icons: UKeepIcons.data,
+        images: UKeepDarkImages.data,
       );
 }

@@ -1,12 +1,12 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-class ApodDotEnv {
+class UKeepDotEnv {
   ///
-  ApodDotEnv._internal();
+  UKeepDotEnv._internal();
 
-  static final ApodDotEnv _instance = ApodDotEnv._internal();
+  static final UKeepDotEnv _instance = UKeepDotEnv._internal();
 
-  static ApodDotEnv get instance => _instance;
+  static UKeepDotEnv get instance => _instance;
 
   static bool _hasInit = false;
 

@@ -13,10 +13,10 @@ ThemeSection icons(BuildContext context) {
           ...assets.icons.characters.props.map<Widget>(
             (c) => NamedCell(
               value: c as Named<String>,
-              builder: (context, v, _) => ApodIcon(
+              builder: (context, v, _) => UKeepIcon(
                 v,
                 color: colorScheme.onSurface,
-                size: ApodIconSize.extraSmall,
+                size: UKeepIconSize.extraSmall,
               ),
             ),
           ),
@@ -28,10 +28,10 @@ ThemeSection icons(BuildContext context) {
           ...assets.icons.characters.props.map<Widget>(
             (c) => NamedCell(
               value: c as Named<String>,
-              builder: (context, v, _) => ApodIcon(
+              builder: (context, v, _) => UKeepIcon(
                 v,
                 color: colorScheme.onSurface,
-                size: ApodIconSize.medium,
+                size: UKeepIconSize.medium,
               ),
             ),
           ),

@@ -29,9 +29,9 @@ void testAppWidgets(
         key,
         MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Nasa Apod',
-          theme: ApodLightTheme.data(XFormFactor.medium),
-          darkTheme: ApodDarkTheme.data(XFormFactor.medium),
+          title: 'Nasa UKeep',
+          theme: UKeepLightTheme.data(XFormFactor.medium),
+          darkTheme: UKeepDarkTheme.data(XFormFactor.medium),
           themeMode: ThemeMode.dark,
           home: Column(
             mainAxisSize: MainAxisSize.max,

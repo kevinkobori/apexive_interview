@@ -1,15 +1,15 @@
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodIcons {
+class UKeepIcons {
   static XIconsData get data => XIconsData(
         fontFamily: 'apod_icons',
         fontPackage: 'nasa_apod_design_system',
-        characters: ApodIconCharacters.data,
-        sizes: ApodIconSizes.data,
+        characters: UKeepIconCharacters.data,
+        sizes: UKeepIconSizes.data,
       );
 }
 
-class ApodIconCharacterKey {
+class UKeepIconCharacterKey {
   static const addPicture = XIconCharacterKey('addPicture');
   static const arrowBack = XIconCharacterKey('arrowBack');
   static const dismiss = XIconCharacterKey('dismiss');
@@ -19,27 +19,28 @@ class ApodIconCharacterKey {
   static const shoppingCart = XIconCharacterKey('shoppingCart');
 }
 
-class ApodIconCharacters {
+class UKeepIconCharacters {
   static XIconCharactersData get data => XIconCharactersData(
         characters: {
-          ApodIconCharacterKey.addPicture:
+          UKeepIconCharacterKey.addPicture:
               String.fromCharCodes([57344, 58343, 58413, 57568]),
-          ApodIconCharacterKey.arrowBack:
+          UKeepIconCharacterKey.arrowBack:
               String.fromCharCodes([57344, 58537, 59260, 57572]),
-          ApodIconCharacterKey.dismiss:
+          UKeepIconCharacterKey.dismiss:
               String.fromCharCodes([57344, 57911, 61195, 57514]),
-          ApodIconCharacterKey.options:
+          UKeepIconCharacterKey.options:
               String.fromCharCodes([58088, 58314, 57452]),
-          ApodIconCharacterKey.tag: String.fromCharCodes([59112, 57969, 57576]),
-          ApodIconCharacterKey.vikoin:
+          UKeepIconCharacterKey.tag:
+              String.fromCharCodes([59112, 57969, 57576]),
+          UKeepIconCharacterKey.vikoin:
               String.fromCharCodes([57344, 57929, 57730, 57522]),
-          ApodIconCharacterKey.shoppingCart:
+          UKeepIconCharacterKey.shoppingCart:
               String.fromCharCodes([57344, 58580, 57759, 57350]),
         },
       );
 }
 
-class ApodIconSizes {
+class UKeepIconSizes {
   // TODO: NOW - PUT IT ALL TO OPTION.NONE
   static XIconSizesData get data => const XIconSizesData(
         extraSmall: 16.0,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodRadius {
+class UKeepRadius {
   static XRadiusData get data => XRadiusData(
         extraSmall: const Optional.of(Radius.circular(5)),
         small: const Optional.of(Radius.circular(10)),

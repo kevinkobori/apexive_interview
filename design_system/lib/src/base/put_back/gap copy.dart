@@ -2,45 +2,45 @@
 // import 'package:gap/gap.dart';
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-// class ApodGap extends StatelessWidget {
+// class UKeepGap extends StatelessWidget {
 //   final XSpacing spacing;
 
-//   const ApodGap(
+//   const UKeepGap(
 //     this.spacing, {
 //     super.key,
 //   });
 
-//   const ApodGap.none({
+//   const UKeepGap.none({
 //     super.key,
 //   }) : spacing = XSpacing.none;
 
-//   const ApodGap.extraSmall({
+//   const UKeepGap.extraSmall({
 //     super.key,
 //   }) : spacing = XSpacing.extraSmall;
 
-//   const ApodGap.small({
+//   const UKeepGap.small({
 //     super.key,
 //   }) : spacing = XSpacing.small;
 
-//   const ApodGap.semiSmall({
+//   const UKeepGap.semiSmall({
 //     super.key,
 //   }) : spacing = XSpacing.semiSmall;
 
-//   ApodGap.large({
+//   UKeepGap.large({
 //     super.key,
 //   }) : spacing = metrics.xSpacings.large;
 
-//   const ApodGap.extraLarge({
+//   const UKeepGap.extraLarge({
 //     super.key,
 //   }) : spacing = XSpacing.extraLarge;
 
-//   const ApodGap.superLarge({
+//   const UKeepGap.superLarge({
 //     super.key,
 //   }) : spacing = XSpacing.superLarge;
 
 //   @override
 //   Widget build(BuildContext context) {
-//     final metrics = Theme.of(context).extension<ApodThemeData>()!;
+//     final metrics = Theme.of(context).extension<UKeepThemeData>()!;
 
 //     return Gap(spacing.toDouble(metrics));
 //   }

@@ -1,13 +1,13 @@
 // import 'package:equatable/equatable.dart';
 // import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-// class ApodImages extends Equatable {
+// class UKeepImages extends Equatable {
 //   final String appLogo;
 //   final String appWormLogo;
 //   final String darkAppLogo;
 //   final String darkAppWormLogo;
 
-//   const ApodImages()
+//   const UKeepImages()
 //       : appLogo = 'assets/images/nasa_logo.svg',
 //         appWormLogo = 'assets/images/nasa_worm_logo.svg',
 //         darkAppLogo = 'assets/images/nasa_logo.svg',
@@ -22,11 +22,11 @@
 //       ];
 // }
 
-// // class ApodImagesData extends Equatable {
+// // class UKeepImagesData extends Equatable {
 // //   final String appLogo;
 // //   final String appWormLogo;
 
-// //   const ApodImagesData({
+// //   const UKeepImagesData({
 // //     required this.appLogo,
 // //     required this.appWormLogo,
 // //   });

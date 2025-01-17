@@ -20,5 +20,5 @@ void main() async {
 }
 
 Future<void> _startSingletons() async {
-  await ApodDotEnv.initialize();
+  await UKeepDotEnv.initialize();
 }

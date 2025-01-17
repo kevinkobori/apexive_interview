@@ -1,6 +1,6 @@
 import 'package:nasa_apod_design_system/nasa_apod_design_system.dart';
 
-class ApodSpacings {
+class UKeepSpacings {
   static XSpacingsData get data => XSpacingsData(
         superSmall: const Optional.none(),
         extraSmall: null,
