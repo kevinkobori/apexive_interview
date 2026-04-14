@@ -9,12 +9,10 @@ class DeviceInfoImpl implements DeviceInfo {
   @override
   Future<bool> isConnected() async {
     final connectivityResult = await connectionChecker.checkConnectivity();
-    if (connectivityResult == ConnectivityResult.mobile) {
-      return true;
-    } else if (connectivityResult == ConnectivityResult.wifi) {
-      return true;
-    } else {
+    if (connectivityResult == ConnectivityResult.none) {
       return false;
+    } else {
+      return true;
     }
   }
 }

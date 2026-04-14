@@ -5,7 +5,7 @@ import 'package:soundpool/soundpool.dart';
 
 abstract final class XSoundsHelper {
   final _pool = Soundpool.fromOptions(
-      options: const SoundpoolOptions(streamType: StreamType.music));
+      options: SoundpoolOptions(streamType: StreamType.music));
 
   final _map = <String, int>{};
 
